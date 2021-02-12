@@ -24,6 +24,10 @@ body {
   padding: 40px 0;
 }
 
+.logo {
+  font-family: 'pt_serifbold', helvetica, arial;
+}
+
 .menu__item {
   padding: 0 13px;
   border: dashed 1px red;
