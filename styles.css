@@ -25,7 +25,31 @@ body {
 }
 
 .logo {
-  font-family: 'pt_serifbold', helvetica, arial;
+  position: relative;
+  padding-left: 44px;
+  font: bold 24px/31px 'pt_serif', helvetica, arial;
+}
+
+.logo__circle {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  border: dashed 1px red;
+  border-radius: 50%;
+  opacity: .7;
+}
+
+.logo__circle_color_blue {
+  left: 8px;
+  top: 56%;
+  background: #C8DBFB;
+}
+
+.logo__circle_color_dark-blue {
+  background: #0056EC;
 }
 
 .menu__item {
