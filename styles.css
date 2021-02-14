@@ -1,5 +1,35 @@
-.main-content__title {
-  font-family: Roboto;
+.main {
+  padding: 0 63% 100px 0;
+  background: url(img/Frame.svg) no-repeat top right;
+}
+
+.main__title {
+  font: bold 50px/65px 'pt_serif', helvetica, arial;
+  margin: 0 0 40px 0;
+}
+
+.main__subtitle {
+  font: 18px/21px 'Roboto', helvetica, arial;
+  margin: 0 0 41px 0;
+}
+
+.main__button {
+  font: 14px/16px 'Roboto', helvetica, arial;
+  padding: 14px 16px;
+  display: inline-block;
+  color: #fff;
+  background: #0056EC;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity .5s;
+}
+
+.main__button:hover {
+  opacity: .5;
+}
+
+.main__title-text_highlight {
+  background: #ECF3FF;
 }
 
 body {
@@ -9,18 +39,17 @@ body {
 .wrapper {
   margin: auto;
   width: 80%;
-  border: dashed 1px red;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 100px;
 }
 
 .logo, .menu {
   display: inline-block;
-  border: dashed 1px red;
   padding: 40px 0;
 }
 
@@ -37,7 +66,6 @@ body {
   transform: translateY(-50%);
   width: 28px;
   height: 28px;
-  border: dashed 1px red;
   border-radius: 50%;
   opacity: .7;
 }
@@ -54,7 +82,6 @@ body {
 
 .menu__item {
   margin-right: 26px;
-  border: dashed 1px red;
   font: 500 18px/21px 'Roboto', helvetica, arial, sans-serif;
   color: #000;
   text-decoration: none;
