@@ -74,7 +74,7 @@ body {
   height: 3px;
   background: #0056EC;
   opacity: 0;
-  transition: opacity .5s; width: .5s;
+  transition: opacity .5s, width .5s;
 }
 
 .menu__item:hover:after, .menu__item_active:after {
