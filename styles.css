@@ -1,20 +1,20 @@
 .main {
-  padding: 0 63% 100px 0;
-  background: url(img/Frame.svg) no-repeat top right;
+  padding: 0 63% 206px 0;
+  background: top right no-repeat url('img/Frame.svg');
 }
 
 .main__title {
-  font: bold 50px/65px 'pt_serif', helvetica, arial;
+  font: 700 66px/87px 'pt_serif', helvetica, arial;
   margin: 0 0 40px 0;
 }
 
 .main__subtitle {
-  font: 18px/21px 'Roboto', helvetica, arial;
+  font: 22px/26px 'Roboto', helvetica, arial;
   margin: 0 0 41px 0;
 }
 
 .main__button {
-  font: 14px/16px 'Roboto', helvetica, arial;
+  font: 18px/21px 'Roboto', helvetica, arial;
   padding: 14px 16px;
   display: inline-block;
   color: #fff;
@@ -56,7 +56,7 @@ body {
 .logo {
   position: relative;
   padding-left: 44px;
-  font: bold 24px/31px 'pt_serif', helvetica, arial;
+  font: 700 24px/32px 'pt_serif', helvetica, arial;
 }
 
 .logo__circle {
