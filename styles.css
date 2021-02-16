@@ -4,18 +4,22 @@
 }
 
 .main__title {
-  font: 700 66px/87px 'pt_serif', helvetica, arial;
-  margin: 0 0 40px 0;
+  font: bold 66px/87px 'PT Serif', helvetica, arial;
+  margin: 0 0 37px 0;
+  padding: 13% 0 0 0;
 }
 
 .main__subtitle {
   font: 22px/26px 'Roboto', helvetica, arial;
-  margin: 0 0 41px 0;
+  padding: 1px 20px 16px 2px;
+  position: relative;
+  width: 455px;
+  height: 52px;
 }
 
 .main__button {
   font: 18px/21px 'Roboto', helvetica, arial;
-  padding: 14px 16px;
+  padding: 19px 31px;
   display: inline-block;
   color: #fff;
   background: #0056EC;
@@ -45,18 +49,18 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 165px;
 }
 
 .logo, .menu {
   display: inline-block;
-  padding: 40px 0;
+  margin: 0.5%;
 }
 
 .logo {
   position: relative;
   padding-left: 44px;
-  font: 700 24px/32px 'pt_serif', helvetica, arial;
+  font: 700 24px/32px 'PT Serif', helvetica, arial;
 }
 
 .logo__circle {
@@ -81,7 +85,7 @@ body {
 }
 
 .menu__item {
-  margin-right: 26px;
+  margin-right: 22px;
   font: 500 18px/21px 'Roboto', helvetica, arial, sans-serif;
   color: #000;
   text-decoration: none;
