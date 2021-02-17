@@ -49,12 +49,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 165px;
+  padding: 27px 14px 165px 0px;
 }
 
 .logo, .menu {
   display: inline-block;
-  margin: 0.5%;
+  padding: 15px 1px 1px 0px;
 }
 
 .logo {
@@ -114,5 +114,5 @@ body {
 }
 
 .menu__item:last-child {
-  margin-right: 0;
+  margin-right: 0px;
 }
