@@ -1,5 +1,39 @@
-.main-content__title {
-  font-family: Roboto;
+.main {
+  padding: 0 63% 206px 0;
+  background: top right no-repeat url('img/Frame.svg');
+}
+
+.main__title {
+  font: bold 66px/87px 'PT Serif', helvetica, arial;
+  margin: 0 0 37px 0;
+  padding: 13% 0 0 0;
+}
+
+.main__subtitle {
+  font: 22px/26px 'Roboto', helvetica, arial;
+  padding: 1px 20px 16px 2px;
+  position: relative;
+  width: 455px;
+  height: 52px;
+}
+
+.main__button {
+  font: 18px/21px 'Roboto', helvetica, arial;
+  padding: 19px 31px;
+  display: inline-block;
+  color: #fff;
+  background: #0056EC;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity .5s;
+}
+
+.main__button:hover {
+  opacity: .5;
+}
+
+.main__title-text_highlight {
+  background: #ECF3FF;
 }
 
 body {
@@ -9,26 +43,76 @@ body {
 .wrapper {
   margin: auto;
   width: 80%;
-  border: dashed 1px red;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 27px 14px 165px 0px;
 }
 
 .logo, .menu {
   display: inline-block;
-  border: dashed 1px red;
-  padding: 40px 0;
+  padding: 15px 1px 1px 0px;
+}
+
+.logo {
+  position: relative;
+  padding-left: 44px;
+  font: 700 24px/32px 'PT Serif', helvetica, arial;
+}
+
+.logo__circle {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  opacity: .7;
+}
+
+.logo__circle_color_blue {
+  left: 8px;
+  top: 56%;
+  background: #C8DBFB;
+}
+
+.logo__circle_color_dark-blue {
+  background: #0056EC;
 }
 
 .menu__item {
-  padding: 0 13px;
-  border: dashed 1px red;
+  margin-right: 22px;
+  font: 500 18px/21px 'Roboto', helvetica, arial, sans-serif;
+  color: #000;
+  text-decoration: none;
+  position: relative;
+}
+
+.menu__item:hover {
+  opacity: .5;
+}
+
+.menu__item:after {
+  position: absolute;
+  display: block;
+  content: '';
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #0056EC;
+  opacity: 0;
+  transition: opacity .5s, width .5s;
+}
+
+.menu__item:hover:after, .menu__item_active:after {
+  opacity: 1;
+  width: 100%;
 }
 
 .menu__item:last-child {
-  padding-right: 0;
+  margin-right: 0px;
 }
