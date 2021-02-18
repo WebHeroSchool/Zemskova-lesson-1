@@ -116,3 +116,35 @@ body {
 .menu__item:last-child {
   margin-right: 0px;
 }
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .header {
+    margin-bottom: 28px;
+  }
+
+  .main {
+    padding: 74% 0 0;
+    background-size: 74%;
+    background-position: top center;
+    text-align: center;
+  }
+
+  .main__title {
+    font: bold 40px/49px 'PT Serif', helvetica, arial;
+    margin-bottom: 44px;
+  }
+
+  .main__subtitle {
+    font: 500 22px/24px 'Roboto', helvetica, arial;
+    margin-bottom: 25px;
+  }
+
+  .main__button {
+    font: 500 16px/18px 'Roboto', helvetica, arial;
+  }
+
+}
