@@ -117,14 +117,49 @@ body {
   margin-right: 0px;
 }
 
+#menu__toggle {
+  opacity: 0;
+}
+
+@media (max-width: 1400px) {
+  .header {
+    padding: 27px 84px 82px 82px;
+   }
+
+  .menu__item {
+    font: 500 14px/16px 'Roboto', helvetica, arial, sans-serif;
+  }
+
+  .main {
+    padding-left: 81px;
+    background-size: 48%;
+    margin-right: -100px;
+  }
+
+  .main__title {
+    font: 700 50px/66px 'PT Serif', helvetica, arial;
+  }
+
+  .main__subtitle {
+   font: 500 18px/21px 'Roboto', helvetica, arial;
+   margin-bottom: 14px;
+  }
+
+  .main__button {
+  font: 14px/16px 'Roboto', helvetica, arial;
+  padding: 16px 22px;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+}
+
 @media (min-width: 768px) {
   .hamburger-menu {
     display: none;
   }
-}
-
-#menu__toggle {
-  opacity: 0;
 }
 
 @media (max-width: 768px) {
@@ -160,7 +195,7 @@ body {
   .main__subtitle {
     font: 500 16px/19px 'Roboto', helvetica, arial;
     width: fit-content;
-    padding: 0 5% 4% 8%;
+    padding: 0 8% 4% 8%;
     position: initial;
   }
 
