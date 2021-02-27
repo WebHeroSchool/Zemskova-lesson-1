@@ -1,25 +1,27 @@
 .main {
   padding: 0 63% 206px 0;
-  background: top right no-repeat url('img/Frame.svg');
+  background: no-repeat url('img/Frame.svg');
+  background-position-y: 6.5%;
+  background-size: 50%;
+  background-position-x: 99%;
 }
 
 .main__title {
   font: bold 66px/87px 'PT Serif', helvetica, arial;
   margin: 0 0 37px 0;
-  padding: 13% 0 0 0;
+  padding: 13.5% 0 0 4px;
 }
 
 .main__subtitle {
   font: 22px/26px 'Roboto', helvetica, arial;
-  padding: 1px 20px 16px 2px;
+  padding: 1px 100px 40px 3px;
   position: relative;
-  height: 52px;
-  width: 75%;
+  margin: 0;
 }
 
 .main__button {
   font: 18px/21px 'Roboto', helvetica, arial;
-  padding: 19px 31px;
+  padding: 19px 35px 18px 27px;
   display: inline-block;
   color: #fff;
   background: #0056EC;
@@ -49,13 +51,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 27px 14px 165px 0px;
+  padding: 39px 10px 167px 3px;
 }
 
 .logo, .menu {
   display: inline-block;
-  padding: 15px 1px 1px 0px;
 }
+
+.menu {}
 
 .logo {
   position: relative;
@@ -92,6 +95,10 @@ body {
   position: relative;
 }
 
+.menu {
+    padding: 5px 0 0 0;
+}
+
 .menu__item:hover {
   opacity: .5;
 }
@@ -117,52 +124,141 @@ body {
   margin-right: 0px;
 }
 
+.menu__box {
+  display: none;
+}
+
 #menu__toggle {
   opacity: 0;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1755px) {
+  .main {
+    padding-right: 50%;
+  }
+
+.main__subtitle {
+    width: 65%;
+}
+}
+
+@media (max-width: 1635px) {
+  .main__subtitle {
+    width: 73%;
+  }
+}
+
+  @media (max-width: 1445px) {
+    .main__subtitle {
+      width: 76%;
+    }
+  }
+
+@media (max-width: 1380px) {
   .header {
-    padding: 27px 84px 82px 82px;
+    padding: 39px 84px 86px 82px;
    }
 
   .menu__item {
     font: 500 14px/16px 'Roboto', helvetica, arial, sans-serif;
   }
 
+.menu {
+    padding: 7px 2px 0 0;
+}
+
   .main {
-    padding-left: 81px;
-    background-size: 48%;
-    margin-right: -100px;
+    padding-left: 77px;
+    background-size: 47%;
+    background-position: 86%;
+    background-position-y: 21.5%;
+    padding-right: 40%;
   }
 
   .main__title {
     font: 700 50px/66px 'PT Serif', helvetica, arial;
+    padding: 54px 0 0 4px;
   }
 
   .main__subtitle {
    font: 500 18px/21px 'Roboto', helvetica, arial;
-   margin-bottom: 14px;
+   padding: 1px 1px 41px 4px;
+   width: 68%;
   }
 
   .main__button {
   font: 14px/16px 'Roboto', helvetica, arial;
-  padding: 16px 22px;
+  padding: 15px 24px;
+  }
+}
+
+@media (max-width: 1225px) {
+  .main__subtitle {
+    width: 77%;
   }
 
+.main {
+    background-position: 100%;
+    background-position-y: 21.5%;
+}
 }
 
-@media (max-width: 1024px) {
-
+@media (max-width: 1110px) {
+  .main__subtitle {
+    width: 85%;
+  }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 1030px) {
+  .main__subtitle {
+    width: 76%;
+  }
+
+.wrapper {width: 100%;}
+
+.header {padding: 40px 44px 86px 46px;}
+
+.main {
+    padding: 0 50% 19% 4%;
+}
+
+.main {
+    background-position: 90.5%;
+    background-position-y: 21%;
+    background-size: 50%;
+}
+}
+
+@media (max-width: 1000px) {
+  .main__subtitle {
+    width: 79%;
+  }
+}
+
+  @media (max-width: 960px) {
+    .main__subtitle {
+      width: 85%;
+    }
+  }
+
+    @media (max-width: 890px) {
+      .main__subtitle {
+        width: 80%;
+      }
+
+.main {
+    padding: 0 40% 20% 5%;
+    background-position-x: 100%;
+}
+    }
+
+@media (min-width: 770px) {
   .hamburger-menu {
     display: none;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
   .menu {
     display: none;
   }
@@ -172,7 +268,8 @@ body {
   }
 
    .header {
-    padding-bottom: 40px;
+    /* padding-bottom: 40px; */
+    padding: 7.5% 5% 9% 11%;
   }
 
   .logo {
@@ -180,9 +277,10 @@ body {
   }
 
   .main {
-    padding: 70% 0;
-    background-size: 92%;
-    background-position: top center;
+    padding: 57.5% 10%;
+    background-size: 75%;
+    background-position-x: center;
+    background-position-y: 1%;
     text-align: center;
   }
 
@@ -195,7 +293,7 @@ body {
   .main__subtitle {
     font: 500 16px/19px 'Roboto', helvetica, arial;
     width: fit-content;
-    padding: 0 8% 4% 8%;
+    padding: 1% 8% 8% 9%;
     position: initial;
   }
 
