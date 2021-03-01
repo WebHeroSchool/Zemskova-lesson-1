@@ -27,7 +27,13 @@
   background: #0056EC;
   text-decoration: none;
   border-radius: 4px;
-  transition: opacity .5s;
+/*  transition: opacity .5s; */
+  animation: pop 5s ease-in-out;
+}
+
+@keyframes pop {
+  from  {background: white;}
+  to    {background: blue;}
 }
 
 .main__button:hover {
@@ -57,8 +63,6 @@ body {
 .logo, .menu {
   display: inline-block;
 }
-
-.menu {}
 
 .logo {
   position: relative;
@@ -93,6 +97,14 @@ body {
   color: #000;
   text-decoration: none;
   position: relative;
+  animation: menu 2s;
+}
+
+@keyframes menu {
+  0%   {left: 0px; color: white}
+	25%  {left: 100px; color: white}
+	75%  {left: 100px; color: white}
+  100% {left: 0px;}
 }
 
 .menu {
@@ -131,6 +143,8 @@ body {
 #menu__toggle {
   opacity: 0;
 }
+
+
 
 @media (max-width: 1755px) {
   .main {
